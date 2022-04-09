@@ -2,6 +2,7 @@
 ## How are you? - heading 2
 
 **This is testing different formats for Markdown (Bold)** 
+
 *This is Italic*
 
 [Music](https://www.youtube.com/watch?v=Xc1Le3CSdrM&ab_channel=Lofi%EC%BD%94%EB%94%A9)
