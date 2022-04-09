@@ -4,9 +4,9 @@
 **This is testing different formats for Markdown (Bold)** 
 *This is Italic*
 
-[Music] (https://www.youtube.com/watch?v=Xc1Le3CSdrM&ab_channel=Lofi%EC%BD%94%EB%94%A9)
+[Music](https://www.youtube.com/watch?v=Xc1Le3CSdrM&ab_channel=Lofi%EC%BD%94%EB%94%A9)
 
-![Lofi] (https://dazedimg-dazedgroup.netdna-ssl.com/1280/azure/dazed-prod/1280/8/1288188.jpg)
+![Lofi](https://dazedimg-dazedgroup.netdna-ssl.com/1280/azure/dazed-prod/1280/8/1288188.jpg)
 
 > This is what I am listening to as I am writing this file
 
