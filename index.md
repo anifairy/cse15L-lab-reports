@@ -1,33 +1,65 @@
-# Hello, World! - heading 1
-## How are you? - heading 2
+# CSE 15L Lab Reports
 
-**This is testing different formats for Markdown (Bold)** 
+## Lab Report 1: Week 2
 
-*This is Italic*
+1. Installing VScode 
 
-[Music](https://www.youtube.com/watch?v=Xc1Le3CSdrM&ab_channel=Lofi%EC%BD%94%EB%94%A9)
+![VScode](vscode.png)
 
-![Lofi](https://dazedimg-dazedgroup.netdna-ssl.com/1280/azure/dazed-prod/1280/8/1288188.jpg)
+The image above displays my VScode starting screen. I download the lastest VScode for Windows, then I changed the theme to my liking.
 
-> This is what I am listening to as I am writing this file
+2. Remotely Connecting
 
-## Artist I like
-* DPR Live
-* Twice
-* Joji
+![Connecting](remotlyconnecting.png)
 
-## Testing Number list
-1. One
-2. Two
-3. Three
+First, I had to install OpenSSH and found my CSE 15L account for the servers (cs15lsp22atp@ieng6.ucsd.edu). I typed in ssh cs15.. in my terminal which then asks for my password. Kept in mind that writing my password does not show up due to sercuity reasons. I am then showed the image above when indcated that I have connected to the server.
 
-Testing Horizontal Rule:
-***
-`Code` with backticks
+3. Trying Some Commands
 
-```
-# code bock 
-with multiple
-lines
-```
+![Commands](testingcommands.png)
 
+With my lab group we tested some commands in our terminals to test out each commands. I decied to try out `ls -a`. This gives returns alist the whole lists of the current directory which also includes hidden files. This can be seen in the image above. 
+
+4. Moving Files with `scp` 
+
+![Connecting](scp.png)
+
+If I create a local file on my computer, I can send it to my server account using `scp`. I used the line of code 
+
+`scp WhereAmI.java cs15lsp22atp@ieng6.ucsd.edu:~/` 
+
+on my local terminal. I put in my password. I double checked if the transfer was complete by logging into my server and using 
+
+`ls`
+
+5. Setting an SSH Key
+
+![sshkeys](sshkeys.png)
+
+This has taken me so long to figure out. So the first step is to create a key using this code:
+
+`ssh-keygen -t ed25519` 
+
+on powershell as Administrator. Press enter mutiple times till the randomart pops up. EXIT powershell, then run regular powershell on the deskstop and run this code:
+
+`ssh-add .ssh/id_ed25519`
+
+After that, it should say key added, then log into the ieng6 account and run this code:
+
+`mkdir .ssh`
+
+This will create a file called .ssh on the serve. Then exit the server. Lastly you will need to run this code:
+
+`scp "\Users\Gaby Ruiz\.ssh\id_ed25519.pub" cs15lsp22atp@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
+Put in your password. Then try to log in, it should not ask for a password again.
+
+6. Optmizing Remote Running
+
+![remotehelp](remotehelp.png)
+
+Remote running can help when it is a bother to keep logging on the server. Instead run:
+
+`ssh cs15l22atp@ieng6.ucsd.edu "__"`
+
+With the blank being the code you want to run. Note: use ";" to break line in code.
