@@ -9,22 +9,22 @@
 ### Snippet 1
 
 1. It should input:
-2. ![Showing code in MPTest](image.jpg)
-3. My implmentation did or did not pass(show image of it not passing)
+2. ![Showing code in MPTest](mysnippet1.jpg)
+3. My implmentation did pass yay!
 4. Their implmentation did or did not pass (show image of it not passing)
 
 
 ### Snippet 2
 
 1. It should input:
-2. ![Showing code in MPTest](image.jpg)
-3. My implmentation did or did not pass(show image of it not passing)
+2. ![Showing code in MPTest](mysnippet3.jpg)
+3. My implmentation did pass yay!
 4. Their implmentation did or did not pass (show image of it not passing)
 
 
 ### Snippet 3
 
 1. It should input:
-2. ![Showing code in MPTest](image.jpg)
-3. My implmentation did or did not pass(show image of it not passing)
+2. ![Showing code in MPTest](mysnippet3.jpg)
+3. My implmentation did pass yay!
 4. Their implmentation did or did not pass (show image of it not passing)
